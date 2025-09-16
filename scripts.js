@@ -6,7 +6,7 @@ const numberIndicator = document.querySelector('.numbers');
 const list = document.querySelector('.list');
 
 let active = 0;
-const total = items.length
+const total = backendQuadros.length
 let timer;
 
 function update(direction) {
