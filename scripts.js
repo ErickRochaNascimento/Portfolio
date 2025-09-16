@@ -3,7 +3,7 @@ const nextButton = document.getElementById('next');
 const backendQuadros = document.querySelectorAll('.backendQuadro');
 const dots = document.querySelectorAll('.dot');
 const numberIndicator = document.querySelector('.numbers');
-const list = document.querySelector('.list');
+const backends = document.querySelector('.backends');
 
 let active = 0;
 const total = backendQuadros.length
@@ -28,7 +28,6 @@ function update(direction) {
     backendQuadros[active].classList.add('active')
     dots[active].classList.add('active')
 
-    numberIndicator.textContent = String(active + 1).padStart(2,'0')
 }
 
 clearInterval(timer)
