@@ -4,6 +4,8 @@
     margin: 0 auto;
     position: relative;
     padding-top: 10%;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -32,15 +34,7 @@
 }
 
 
-.backend-master {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    flex-direction: row;
 
-}
 
 .backend-principal {
     display: flex;
@@ -51,11 +45,21 @@
 
 }
 
+.backend-info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+}
+
 .backend-projetos {
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: left;
+    align-items: right;
     justify-content: center;
     z-index: 2;
     flex-direction: column;
@@ -92,7 +96,6 @@
     position: relative;
     z-index: 2;
     padding-bottom: 2%;
-    padding-left: 10%;
 }
 
 .backend-img img {
@@ -145,15 +148,13 @@
 }
 
 .backends {
-    display: flex;
     white-space: normal;
     list-style: none;
     padding: 0;
     margin: 0;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     width: 100%;
-    flex-direction: column;
     gap: 4px;
     height: 100%;
    
@@ -173,7 +174,7 @@
 
 .backendQuadro {
     width: 85%;
-    height: auto;
+    height: 80%;
     background: #191F2C;
     border-radius: 25px;
     display: flex;
@@ -183,13 +184,14 @@
     padding: 20px;
     box-sizing: border-box;
     gap: 15px;
+    position: absolute;
     opacity: 0;
-    
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease-in-out;
 }
 
 .active {
     opacity: 1;
-    transform: translateX(0);
 
 }
 
@@ -388,4 +390,37 @@
     flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 5;
+}
+
+.numbers {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.2);
+
+
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 40px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
 }

@@ -6,7 +6,7 @@ const numberIndicator = document.querySelector('.numbers');
 const backends = document.querySelector('.backends');
 
 let active = 0;
-const total = backendQuadros.length
+const total = backendQuadros.length;
 let timer;
 
 function update(direction) {
@@ -27,6 +27,10 @@ function update(direction) {
     }
     backendQuadros[active].classList.add('active')
     dots[active].classList.add('active')
+
+    numberIndicator.textContent = String(active + 1).padStart(2, '0');
+
+ 
 
 }
 
