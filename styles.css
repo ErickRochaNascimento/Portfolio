@@ -25,7 +25,6 @@ header {
     z-index: 3;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
-    background: #ffa600;
 }
 
 .logo {
