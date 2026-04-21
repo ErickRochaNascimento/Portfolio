@@ -76,7 +76,11 @@ header nav ul li:hover::after {
 }
 
 .perfil {
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    
 }
 
 .perfil::before {
@@ -108,6 +112,8 @@ header nav ul li:hover::after {
     margin: 0 auto;
     position: relative;
     margin-top: 8%;
+    align-items: center;
+    justify-content: center;
 
 }
 

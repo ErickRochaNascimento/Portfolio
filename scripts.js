@@ -1,50 +1,90 @@
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
+const prevButtonBack = document.getElementById('prevBack');
+const nextButtonBack = document.getElementById('nextBack');
 const backendQuadros = document.querySelectorAll('.backendQuadro');
-const dots = document.querySelectorAll('.dot');
-const numberIndicator = document.querySelector('.numbers');
 const backends = document.querySelector('.backends');
 
-let active = 0;
-const total = backendQuadros.length;
-let timer;
+let activeBack = 0;
+const totalBack = backendQuadros.length;
+let timerBack;
 
 function update(direction) {
     document.querySelector('.backendQuadro.active').classList.remove('active')
-    document.querySelector('.dot.active').classList.remove('active')
 
     if (direction > 0) {
-        active = active + 1;
-        if (active === total) {
-            active = 0
+        activeBack = activeBack + 1;
+        if (activeBack === totalBack) {
+            activeBack = 0
         }
     }
     else if (direction < 0) {
-        active = active - 1;
-        if (active < 0) {
-            active = total - 1;
+        activeBack = activeBack - 1;
+        if (activeBack < 0) {
+            activeBack = totalBack - 1;
         }
     }
-    backendQuadros[active].classList.add('active')
-    dots[active].classList.add('active')
-
-    numberIndicator.textContent = String(active + 1).padStart(2, '0');
+    backendQuadros[activeBack].classList.add('active');
 
  
 
 }
 
-clearInterval(timer)
-timer =  setInterval(() => {
+clearInterval(timerBack)
+timerBack =  setInterval(() => {
     update(1)
 }, 5000);
 
 
-prevButton.addEventListener('click', function () {
+prevButtonBack.addEventListener('click', function () {
     update(-1)
 
 })
-nextButton.addEventListener('click', function () {
+nextButtonBack.addEventListener('click', function () {
+    update(1)
+
+})
+
+
+const prevButtonFront = document.getElementById('prevFront');
+const nextButtonFront = document.getElementById('nextFront');
+const frontendQuadros = document.querySelectorAll('.frontendQuadro');
+const frontends = document.querySelector('.frontends');
+
+let activeFront = 0;
+const totalFront = frontendQuadros.length;
+let timerFront;
+
+function update(direction) {
+    document.querySelector('.frontendQuadro.active').classList.remove('active')
+
+    if (direction > 0) {
+        activeFront = activeFront + 1;
+        if (activeFront === totalFront) {
+            activeFront = 0
+        }
+    }
+    else if (direction < 0) {
+        activeFront = activeFront - 1;
+        if (activeFront < 0) {
+            activeFront = totalFront - 1;
+        }
+    }
+    frontendQuadros[activeFront].classList.add('active');
+
+ 
+
+}
+
+clearInterval(timerFront)
+timerFront =  setInterval(() => {
+    update(1)
+}, 5000);
+
+
+prevButtonFront.addEventListener('click', function () {
+    update(-1)
+
+})
+nextButtonFront.addEventListener('click', function () {
     update(1)
 
 })
