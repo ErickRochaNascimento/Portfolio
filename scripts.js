@@ -7,8 +7,11 @@ let activeBack = 0;
 const totalBack = backendQuadros.length;
 let timerBack;
 
-function update(direction) {
-    document.querySelector('.backendQuadro.active').classList.remove('active')
+function updateBack(direction) {
+    const activeElement = document.querySelector('.backendQuadro.active');
+    if (activeElement) {
+        activeElement.classList.remove('active');
+    }
 
     if (direction > 0) {
         activeBack = activeBack + 1;
@@ -30,16 +33,16 @@ function update(direction) {
 
 clearInterval(timerBack)
 timerBack =  setInterval(() => {
-    update(1)
+    updateBack(1)
 }, 5000);
 
 
 prevButtonBack.addEventListener('click', function () {
-    update(-1)
+    updateBack(-1)
 
 })
 nextButtonBack.addEventListener('click', function () {
-    update(1)
+    updateBack(1)
 
 })
 
@@ -53,8 +56,11 @@ let activeFront = 0;
 const totalFront = frontendQuadros.length;
 let timerFront;
 
-function update(direction) {
-    document.querySelector('.frontendQuadro.active').classList.remove('active')
+function updateFront(direction) {
+    const activeElement = document.querySelector('.frontendQuadro.active');
+    if (activeElement) {
+        activeElement.classList.remove('active');
+    }
 
     if (direction > 0) {
         activeFront = activeFront + 1;
@@ -76,15 +82,15 @@ function update(direction) {
 
 clearInterval(timerFront)
 timerFront =  setInterval(() => {
-    update(1)
+    updateFront(1)
 }, 5000);
 
 
 prevButtonFront.addEventListener('click', function () {
-    update(-1)
+    updateFront(-1)
 
 })
 nextButtonFront.addEventListener('click', function () {
-    update(1)
+    updateFront(1)
 
 })

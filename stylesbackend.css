@@ -20,6 +20,7 @@
 .backend-main-content {
     display: flex;
     width: 100%;
+    flex-direction: row-reverse;
 }
 
 @keyframes pulse {
@@ -36,7 +37,7 @@
 
 .backend-titulo {
     width: 100%;
-    text-align: left;
+    text-align: right;
     flex-shrink: 0;
 }
 
@@ -44,7 +45,7 @@
     width: 50%;
     height: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     z-index: 2;
     flex-direction: column;
@@ -121,16 +122,7 @@
     max-width: 100%;
     text-align: left;
     margin-right: 25%;
-}
 
-.backend-description {
-    font-size: 1.1rem;
-    color: #b8b8d0;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 90%;
-    text-align: justify;
-    overflow-wrap: break-word;
 }
 
 .backend-container {
@@ -171,7 +163,7 @@
     transform: translate(-50%, -50%);
 
     /* Ajusta a posição para centralizar perfeitamente, sem "pular" */
-  
+
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -221,16 +213,18 @@ h1 {
     flex-direction: row;
 }
 
-.subtitulo-tecnologia {
+.subtitulo-tecnologiaback {
     font-size: 1rem;
     text-transform: uppercase;
     color: #00f7ff;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    max-width: 60%;
-    text-align: justify;
-    padding-left: 10%;
+    max-width: 100%;
+
+    text-align: right;
+    padding-right: 10%;
+    padding-left: 0;
 
 }
 
@@ -255,13 +249,14 @@ h1 {
 
 
 .tecnologiasusadas-label {
-    font-size: 1rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     color: #00f7ff;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    max-width: 60%;
+    width: 100%; 
+    max-width: 100%;
     text-align: center;
 }
 
@@ -361,7 +356,8 @@ h1 {
     margin-bottom: 30px;
     max-width: 100%;
     text-align: justify;
-    margin-right: 25%;
+    margin-left: 15%; 
+    margin-right: 0;
 }
 
 .backendinfo-principal {
@@ -398,7 +394,7 @@ h1 {
 }
 
 .btn-projeto {
-    
+
     display: flex;
     align-items: center;
     gap: 8px;
@@ -416,12 +412,14 @@ h1 {
 .btn-projeto img {
     width: 20px;
     height: 20px;
-    filter: invert(1); /* Como o ícone do github é preto, isso o transforma em branco para dar contraste */
+    filter: invert(1);
+    /* Como o ícone do github é preto, isso o transforma em branco para dar contraste */
 }
 
 .btn-projeto:hover {
     background: rgba(0, 247, 255, 0.2);
     border-color: #00f7ff;
     box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
-    transform: translateY(-2px); /* Efeito sutil de levantar ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito sutil de levantar ao passar o mouse */
 }
