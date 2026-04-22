@@ -133,6 +133,10 @@
     overflow-wrap: break-word;
 }
 
+.frontend-description b{
+    color: #00f7ff;
+}
+
 .frontend-container {
     width: 100%;
     overflow: hidden;
