@@ -38,5 +38,3 @@ Você pode visualizar a versão mais recente do meu portfólio através do GitHu
 
 **Erick Rocha Nascimento**  
 🔗 [LinkedIn](https://www.linkedin.com/in/erickrochanascimento) | [GitHub](https://github.com/ErickRochaNascimento)
-
-
