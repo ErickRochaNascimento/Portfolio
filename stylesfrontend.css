@@ -82,14 +82,14 @@
 }
 
 .frontend-img {
-    width: 95%;
+    width: 70%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 2;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 .frontend-img img {
@@ -127,8 +127,8 @@
     font-size: 1.1rem;
     color: #b8b8d0;
     line-height: 1.3;
-    margin-bottom: 3px;
-    max-width: 90%;
+    margin: 2%;
+    max-width: 100%;
     text-align:center;
     overflow-wrap: break-word;
 }
@@ -144,29 +144,29 @@
 }
 
 .frontends {
-    white-space: normal;
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 4px;
     position: relative;
     width: 100%;
     height: 100%;
-   
 }
 
 .frontendQuadro, .backendQuadro {
     flex-shrink: 0;
-    width: 90%;
-    height: 100%;
+    width: 80%;
+    min-height: 500px; 
+    height: auto;       
     background: #191F2C;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-   
+    padding: 20px;
+    overflow: hidden;
+    margin: 0;
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -174,7 +174,6 @@
     transform: translate(-50%, -50%);
     transition: opacity 0.5s ease-in-out;
 }
-
 .backendQuadro:hover, .backendQuadro.active:hover{
         border-color: #00f7ff;
     box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
@@ -189,6 +188,7 @@
     font-size: 1rem;
     text-transform: uppercase;
     color: #00f7ff;
+    text-shadow: 0px 0px 15px #00f7ff;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;

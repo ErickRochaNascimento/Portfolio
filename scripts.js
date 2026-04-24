@@ -34,7 +34,7 @@ function updateBack(direction) {
 clearInterval(timerBack)
 timerBack =  setInterval(() => {
     updateBack(1)
-}, 5000);
+}, 10000);
 
 
 prevButtonBack.addEventListener('click', function () {
