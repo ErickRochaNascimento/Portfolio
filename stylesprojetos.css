@@ -1,0 +1,309 @@
+
+
+
+
+.arrowsback {
+    width: 100%;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.arrowback-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.arrowback-btn:hover {
+    border-color: #00f7ff;
+}
+
+.backendinfo-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.backendinfo-description {
+    font-size: 1.1rem;
+    color: #b8b8d0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 100%;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 0;
+}
+
+.backendinfo-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+    z-index: 2;
+
+}
+
+.backendinfo-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+.botoes-projeto {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.frontend-img, .backend-img {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 1%;
+}
+
+.frontend-img img, .backend-img img  {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.frontend-text, .backend-text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10;
+
+}
+
+
+
+.frontend-description, .backend-description {
+    font-size: 1.1rem;
+    color: #b8b8d0;
+    line-height: 1.3;
+    margin: 2%;
+    max-width: 100%;
+    text-align:center;
+    overflow-wrap: break-word;
+}
+
+.frontend-description b, .backend-description b{
+    color: #00f7ff;
+}
+
+.frontend-container, .backend-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+.frontends, .backends {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.frontendQuadro, .backendQuadro {
+    flex-shrink: 0;
+    width: 80%;
+    min-height: 500px; 
+    height: auto;       
+    background: #191F2C;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out;
+}
+.backendQuadro:hover, .backendQuadro.active:hover{
+        border-color: #00f7ff;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.2);
+}
+
+.frontendQuadro.active, .backendQuadro.active {
+    opacity: 1;
+
+}
+
+.frontend-label, .backend-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #00f7ff;
+    text-shadow: 0px 0px 15px #00f7ff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    max-width: 60%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #00f7ff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    text-align: center;
+}
+
+@keyframes scroll-automatico {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.arrowsfront, .arrowsback  {
+    width: 100%;
+    display: flex;
+    z-index: 5;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.arrowfront-btn, .arrowback-btn  {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    pointer-events: auto;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.arrowfront-btn:hover, .arrowback-btn:hover {
+    background-color: rgba(0, 247, 255, 0.2);
+    border-color: #00f7ff;
+}
+
+.frontendinfo-content, .backendinfo-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.frontendinfo-description, .backendinfo-description {
+    font-size: 1.1rem;
+    color: #b8b8d0;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 100%;
+    text-align: justify;
+    margin-right: 25%;
+}
+
+.frontendinfo-principal, .backendinfo-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+    z-index: 2;
+
+}
+
+.frontendinfo-text, .backendinfo-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    z-index: 2;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+.botoes-projeto {
+   
+  
+}
+
+.btn-projeto {
+    
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(0, 247, 255, 0.05);
+    border: 1px solid rgba(0, 247, 255, 0.4);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-projeto img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1); /* Como o ícone do github é preto, isso o transforma em branco para dar contraste */
+}
+
+.btn-projeto:hover {
+    background: rgba(0, 247, 255, 0.2);
+    border-color: #00f7ff;
+    box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
+    transform: translateY(-2px); /* Efeito sutil de levantar ao passar o mouse */
+}
