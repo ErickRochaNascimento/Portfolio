@@ -4,7 +4,17 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Montserrat", sans-serif;
+}
 
+h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #00f7ff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    text-align: center;
 }
 
 body {
@@ -201,6 +211,7 @@ header nav ul li:hover::after {
     margin-right: 25%;
 }
 
+
 .tecnologias-container {
     width: 100%;
     overflow: hidden;
@@ -219,17 +230,22 @@ header nav ul li:hover::after {
     gap: 30px;
 }
 
-.subtitulo-tecnologia {
+.subtitulo-tecnologia,
+.subtitulo-tecnologia-back {
     font-size: 1rem;
     text-transform: uppercase;
     color: #00f7ff;
     font-weight: 600;
     letter-spacing: 2px;
     margin-bottom: 10px;
-    max-width: 60%;
     text-align: justify;
     padding-left: 10%;
+}
 
+.subtitulo-tecnologia-back {
+    text-align: right;
+    padding-left: 0%;
+    padding-right: 10%;
 }
 
 .tecnologias-item {
@@ -248,7 +264,7 @@ header nav ul li:hover::after {
     text-decoration: none;
     color: inherit;
     display: block;
-    margin-bottom: 1opx;
+    margin-bottom: 1px;
     align-items: center;
 }
 
@@ -262,6 +278,18 @@ header nav ul li:hover::after {
     width: 100%;
     max-width: 100%;
     text-align: center;
+}
+
+@keyframes pulse2 {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 @keyframes scroll-automatico {
