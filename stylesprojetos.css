@@ -316,7 +316,7 @@
     .backend-content {
         flex-direction: column;
         height: auto;
-        padding: 60px 20px;
+        padding: 0px 20px;
     }
 
     .frontend-info,
@@ -333,6 +333,7 @@
         text-align: center;
         word-wrap: break-word;
         padding: 0;
+        padding-top: 20%;
     }
 
     .frontend-descricao,
@@ -351,6 +352,8 @@
         width: 100%;
         margin-bottom: 20px;
         opacity: 1;
+        pointer-events: auto;
+        z-index: 0;
     }
 
     .arrowsfront,
