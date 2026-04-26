@@ -21,8 +21,7 @@ h1 {
 body {
     color: #fff;
     font-size: 16px;
-    background: linear-gradient(135deg, #0f1e14 0%, #3a2c1f 100%);
-
+    background: linear-gradient(135deg, #0f1e14 0%, #111d22 50%, #191f2c 100%);
 }
 
 header {
@@ -399,9 +398,10 @@ header nav ul li:hover::after {
 
 /* Responsividade para Telas Menores (Mobile/Tablet) */
 @media (max-width: 768px) {
-    .desktop{
+    .desktop {
         display: none;
     }
+
     header {
         flex-direction: column;
         padding: 15px;
@@ -416,7 +416,7 @@ header nav ul li:hover::after {
         gap: 10px;
         flex-wrap: wrap;
         justify-content: center;
-    
+
 
     }
 
@@ -426,7 +426,7 @@ header nav ul li:hover::after {
     }
 
 
-    .perfil-content{
+    .perfil-content {
         margin-top: 0%;
 
     }
