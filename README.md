@@ -22,7 +22,7 @@ Servir como um cartão de visitas digital, permitindo que recrutadores, colegas 
 
 Você pode visualizar a versão mais recente do meu portfólio através do GitHub Pages:
 
-👉 **[Link para o Portfólio Online]** (https://erickrochanascimento.github.io/Portfolio/)
+👉 **[Link para o Portfólio Online]** (https://erickrochanascimento.github.io/Portfolio/portfolio.html)
 
 ## ▶️ Como Rodar Localmente
 
