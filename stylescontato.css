@@ -53,3 +53,9 @@
     transform: translateY(-4px); 
 }
 
+@media (max-width: 600px) {
+    .cv-contatos{
+        align-items: center;
+    }
+
+}

@@ -4,8 +4,8 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Montserrat", sans-serif;
-}
 
+}
 
 h1 {
     font-size: 2rem;
@@ -395,4 +395,93 @@ header nav ul li:hover::after {
     height: 300px;
     top: 40%;
     left: 60%;
+}
+
+/* Responsividade para Telas Menores (Mobile/Tablet) */
+@media (max-width: 768px) {
+    .desktop{
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    header nav ul {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+
+    }
+
+    .perfil {
+        height: auto;
+        padding: 120px 10px 50px 10px;
+    }
+
+
+
+    .perfil-principal {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap: 15px;
+        padding: 0 5%;
+    }
+
+    .perfil-img {
+        padding-left: 0;
+        flex: 1;
+        max-width: 35%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .perfil-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .perfil-text {
+        padding-left: 0;
+        text-align: left;
+        flex: 2;
+    }
+
+    .subtitulo {
+        font-size: 0.9rem;
+        margin-right: 0;
+        max-width: 100%;
+
+    }
+
+    .perfil-description {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        max-width: 100%;
+        text-align: justify;
+        margin-right: 0;
+    }
+
+    .subtitulo-tecnologia {
+        padding-left: 10%;
+        text-align: left;
+    }
+}
+
+/* Ajuste para Telas Muito Grandes */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }
