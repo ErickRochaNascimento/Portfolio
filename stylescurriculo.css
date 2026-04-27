@@ -66,13 +66,17 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+    display: none;
+
 }
+
 .btn-linkedin-inline:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
     filter: brightness(1.2);
 }
+
 .btn-linkedin-inline img {
-    width: 18px; 
+    width: 18px;
     height: 18px;
     filter: drop-shadow(0 0 2px rgba(0, 247, 255, 0.2));
 }
@@ -93,8 +97,7 @@
     max-width: 50%;
     text-decoration: none;
     color: #fff;
-    background: rgba(0, 2
-    47, 255, 0.05);
+    background: rgba(0, 2 47, 255, 0.05);
     border: 1px solid rgba(0, 247, 255, 0.4);
     border-radius: 8px;
     font-size: 0.9rem;
@@ -117,9 +120,9 @@
     }
 
     .cv-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
-    
+
     .cv-content {
         height: auto;
         padding-bottom: 50px;
