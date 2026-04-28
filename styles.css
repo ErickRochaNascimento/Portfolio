@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Montserrat", sans-serif;
-
 }
 
 h1 {
@@ -119,7 +118,6 @@ header nav ul li:hover::after {
 .perfil-content {
     width: 100%;
     height: 100%;
-    margin: 0 auto;
     position: relative;
     margin-top: 8%;
     align-items: center;
@@ -227,7 +225,11 @@ header nav ul li:hover::after {
     animation: scroll-automatico 20s linear infinite;
     position: relative;
     width: max-content;
+    padding-right: 30px;
     gap: 30px;
+}
+.tecnologias:hover{
+    animation-play-state: paused;
 }
 
 .subtitulo-tecnologia,
@@ -299,7 +301,7 @@ header nav ul li:hover::after {
 
     to {
         transform: translateX(-50%);
-    }
+    } 
 }
 
 .tech-circle {
@@ -482,10 +484,4 @@ header nav ul li:hover::after {
     }
 }
 
-/* Ajuste para Telas Muito Grandes */
-@media (min-width: 1600px) {
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-}
+
